@@ -43,7 +43,7 @@ command! EXHierarchyClose call exhierarchy#close_window()
 "}}}
 
 " default key mappings {{{1
-call exhierarchy#register_hotkey( 1 , 1, '<F1>'            , ":call exhierarchy#toggle_help()<CR>"           , 'Toggle help.' )
+call exhierarchy#register_hotkey( 1 , 1, '?'            , ":call exhierarchy#toggle_help()<CR>"           , 'Toggle help.' )
 if has('gui_running')
     call exhierarchy#register_hotkey( 2 , 1, '<ESC>'           , ":EXHierarchyClose<CR>"                         , 'Close window.' )
 else
