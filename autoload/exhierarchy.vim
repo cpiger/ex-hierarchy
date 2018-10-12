@@ -59,7 +59,7 @@ function exhierarchy#init_buffer()
 
     if line('$') <= 1 && g:ex_hierarchy_enable_help
         silent call append ( 0, s:help_text )
-        silent exec '$d'
+        silent exec '$d _'
     endif
 endfunction
 

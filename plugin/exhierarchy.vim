@@ -49,7 +49,8 @@ if has('gui_running')
 else
     call exhierarchy#register_hotkey( 2 , 1, '<leader><ESC>'   , ":EXHierarchyClose<CR>"                         , 'Close window.' )
 endif
-call exhierarchy#register_hotkey( 3 , 1, '<Space>'         , ":call exhierarchy#toggle_zoom()<CR>"           , 'Zoom in/out project window.' )
+" call exhierarchy#register_hotkey( 3 , 1, '<Space>'         , ":call exhierarchy#toggle_zoom()<CR>"           , 'Zoom in/out project window.' )
+call exhierarchy#register_hotkey( 3 , 1, 'z'               , ":call exhierarchy#toggle_zoom()<CR>"           , 'Zoom in/out project window.' )
 call exhierarchy#register_hotkey( 4 , 1, '<CR>'            , ":call exhierarchy#confirm_select('')<CR>"      , 'Go to the search result.' )
 call exhierarchy#register_hotkey( 5 , 1, '<2-LeftMouse>'   , ":call exhierarchy#confirm_select('')<CR>"      , 'Go to the search result.' )
 call exhierarchy#register_hotkey( 6 , 1, '<S-CR>'          , ":call exhierarchy#confirm_select('shift')<CR>" , 'Go to the search result in split window.' )
